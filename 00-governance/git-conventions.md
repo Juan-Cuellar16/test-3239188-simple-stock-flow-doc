@@ -1,25 +1,11 @@
 # Git conventions
 
-> Adapted to the challenge README. Confirm any workflow not specified there with the repository owner.
+> These conventions follow the challenge instructions in the repository README. They describe how to submit documentation changes to the team fork.
 
-## 1. Repository
-- Work in the team's fork of the challenge repository.
-- Before pushing, use git remote -v and confirm origin points to the fork, not upstream code-sena.
-- Keep this challenge separate from the main application repository.
+## 1. Repository and remote
 
-## 2. Stage and commit
-Stage only intended files and review git status before committing.
+- Work in the fork of `test-3239188-simple-stock-flow-doc`; do not submit these challenge documents to the main application repository.
+- Before the first push, verify that `origin` points to the team fork and not to the upstream `code-sena` repository:
 
-Example:
-git add 04-requirements/non-functional.md
-git commit -m "docs(requirements): add non-functional requirements"
-
-The challenge provides docs(scope): description-style examples. Broader branch and pull-request policy: [TODO].
-
-## 3. Push and verify
-Push the commit to origin main. Check git status and git log --oneline -5. Confirm the commit appears on the fork before the deadline.
-
-If a push is rejected, inspect the repository state and follow the challenge README's rebase guidance.
-
-## 4. Branches and pull requests
-The challenge README does not require a branch or pull request workflow. Team policy: [TODO].
+  ```powershell
+  git remote -v

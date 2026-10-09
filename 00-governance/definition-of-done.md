@@ -1,27 +1,54 @@
 # Definition of Done
 
-> Documentation-focused checklist for the challenge. This does not claim that production implementation or deployment is part of the current deliverable.
+> This checklist is adapted for the Simple Stock Flow documentation challenge. It defines when a documentation task is complete; it does not add implementation requirements to the challenge.
 
-## A documentation task is complete when
+## 1. Purpose
 
-- [ ] The file uses the required path and name.
-- [ ] Content is written in English.
-- [ ] Material claims cite the supplied model.
-- [ ] Unsupported inferences are marked [assumption].
-- [ ] Pending work and source contradictions remain visible.
-- [ ] Related documents do not contradict it, or the mismatch is recorded.
-- [ ] Markdown links and tables are readable.
-- [ ] No unrelated files were changed.
+A document is Done when it is complete enough to review, traceable to the supplied source, and consistent with the other challenge documents.
 
-## Review
+The challenge README defines the required deliverables and submission deadline. The supplied `spec/data-model.md` is the source for reconstructing system documentation.
 
-- [ ] Author or reviewer checked claims against their cited source.
-- [ ] Open questions are recorded rather than silently decided.
-- Reviewer/approver: [TODO]
+## 2. Document completion
 
-## Submission
+- [ ] The file is in the required folder and uses the required filename.
+- [ ] The document is written in English.
+- [ ] Its purpose and scope are clear.
+- [ ] Material claims about the system cite the relevant section, decision, access pattern, or finding from the data model.
+- [ ] Claims not established by the model are marked **[assumption]** or recorded as open questions.
+- [ ] Database-enforced, domain-only, and pending rules are distinguished accurately.
+- [ ] Relevant model contradictions remain visible; the document does not silently present a disputed interpretation as fact.
+- [ ] The document does not add unsupported users, technologies, interfaces, security controls, or service-level targets.
+- [ ] Links, tables, headings, and Markdown formatting are readable.
+- [ ] Cross-references point to the correct files.
+- [ ] The supplied data model and unrelated files were not changed.
 
-- [ ] Intended files are staged and reviewed with git status.
-- [ ] Commit message describes the documentation change.
-- [ ] Commit is pushed to the fork before the challenge deadline.
-- [ ] Pushed commit is visible in the fork.
+## 3. Consistency review
+
+- [ ] Terms agree with the context and domain glossaries.
+- [ ] Requirements and product statements agree with the traceability matrix and user stories.
+- [ ] Architecture statements agree with the architecture overview and consistency check.
+- [ ] Exclusions and unresolved decisions are represented consistently across affected documents.
+- [ ] Any remaining discrepancy is documented with its source and owner, if known.
+
+## 4. Review
+
+- [ ] The author has reread the final document.
+- [ ] Important claims have been checked against their cited source.
+- [ ] Any review feedback has been resolved or recorded as an open issue.
+- [ ] Reviewer or approver: **[TODO: identify if the team requires one]**.
+
+The challenge does not prescribe a formal review board or reviewer role.
+
+## 5. Submission
+
+- [ ] `git status` confirms that only intended files are staged for the commit.
+- [ ] The commit message describes the documentation change.
+- [ ] The commit is pushed to the team's fork, with `origin` verified as the fork remote.
+- [ ] The pushed commit is visible on GitHub before the deadline stated in the challenge README.
+- [ ] The final repository state and recent commit history have been checked.
+
+A local commit that has not been pushed to the fork is not a submitted change under the challenge instructions.
+
+## 6. Not required by this definition
+
+This documentation task does not require implementation code, automated application tests, deployment, or changes to the supplied data model. The challenge evaluates the interpretation and application of the specification in the submitted documents.
